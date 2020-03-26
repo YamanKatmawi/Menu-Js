@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Menu-Js</title>
   </head>
   <body>
-    <button onclick="shMenu()"></button>
     <header>
       <div class="top container">
         <div class="left-menu">
-          <span>About</span>
-          <span>Services</span>
-          <span>Top Picks</span>
+          <div class="navBarItem m-right">
+          <a href="/fulldown.html">About &#x025BE</a>
+          <div class="dropDown" >
+            <div>Florists</div>
+            <div>Meet the team</div>
+            <div>Careers</div>
+          </div>
+          </div>
+          <a href="/fulldown.html" class="m-right test">Services &#x025BE</a>
+          <a href="/fulldown.html">Top Picks &#x025BE</a>
         </div>
+        
       </div>
     </header>
-    <script>
-      const shMenu = () => {
-        console.log("Hi i am function");
-        menuBox.style.display = "none";
-        if (menuBox.style.display == "none") {
-          menuBox.style.display = "block";
-        } else {
-          menuBox.style.display = "none";
-        }
-      };
-    </script>
+    <!-- <script>
+      function hoverHandler(){
+        console.log('Hi how are you');
+        dropDownMenu.style.display='block';
+        
+      } 
+    </script> -->
   </body>
 </html>

@@ -13,11 +13,41 @@
   width: 100vw;
   height: 5vh;
   color: white;
-  background-color: red;
+  background-color: black;
   text-align: left;
   font-size: x-large;
-  justify-content: space-between;
+  margin-right: 20px;
   list-style: none;
-  position: absolute;
   display: flex;
+  position: relative;
+}
+.m-right {
+  margin-right: 20px;
+}
+.dropDown {
+  background-color: skyblue;
+  font-size: larger;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100vw;
+}
+.dropDown > div:hover {
+  background-color: gray;
+  color: black;
+}
+.fulldown {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/under.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navBarItem:hover > .dropDown {
+  display: block;
 }
